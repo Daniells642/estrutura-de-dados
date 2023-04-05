@@ -37,7 +37,7 @@ public class Carro implements Comparable<Carro> {
                 '}';
     }
 
-    @Override
+    /*@Override
     public int compareTo(Carro o) {
         if (this.marca.length() < o.marca.length()){
             return -1;
@@ -46,4 +46,14 @@ public class Carro implements Comparable<Carro> {
         }
         return 0;
     }
+     */
+
+
+    //compareTo - para ordenar em ordem alfabética.
+    @Override
+    public int compareTo(Carro o) {
+        return this.getMarca().compareTo(o.getMarca());
+    }
+
+
 }
